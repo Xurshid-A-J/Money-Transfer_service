@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Home.L10_Delegates.Delegates2.Homework
+namespace Card
 {
 	public class Card
 	{
@@ -15,6 +15,8 @@ namespace Home.L10_Delegates.Delegates2.Homework
 		{ 
 			Type = type;
             currency = type == CardType.UZCARD | type == CardType.HUMO? Currency.Sum: Currency.Dollar;
+			Owner = owner;
+			Id = id;
 		}
 
 
@@ -28,13 +30,14 @@ namespace Home.L10_Delegates.Delegates2.Homework
 				{ throw (new Exception(" Card types dont match !")); }
 				if (amount > Balance) throw (new Exception(" Not enough money on your balance to send !"));
 				Balance -= amount;
-				OnTransferNote.Invoke(this, amount);	
-			}
+				OnTransferNote.Invoke(this, amount);
+                Console.WriteLine(" Transfer successful");
+            }
 			catch(Exception ex)
 			{
 				Console.WriteLine(ex.Message);
 			}
-            Console.WriteLine(" Transfer successful");
+           
 
         }
 		public void ReceiveMoney(Card card,int amount)
@@ -61,6 +64,13 @@ namespace Home.L10_Delegates.Delegates2.Homework
 			return $"Owner :{Owner} , ID : {Id} , Type : {Type} , " +
 				$"Currency: {currency} ";
         }
+
+		public void TopUp(int amount)
+		{
+			this.Balance += amount;
+			Console.WriteLine($" + {amount} to the Balance !\n Current balance : { this.Balance} {currency} ");
+		}
+       
     }
 }
 

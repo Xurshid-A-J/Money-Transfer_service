@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Home.L10_Delegates.Delegates2.Homework
+namespace Card
 {
 	public enum CardType
 	{   UZCARD,
