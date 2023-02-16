@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTransfering", "MoneyTransfering\MoneyTransfering.csproj", "{49310D54-2429-4247-8C57-D876A2C16C40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_JSON", "CRUD_JSON\CRUD_JSON.csproj", "{EDCC0130-DBF0-4130-8F6D-975909D5B090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49310D54-2429-4247-8C57-D876A2C16C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49310D54-2429-4247-8C57-D876A2C16C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49310D54-2429-4247-8C57-D876A2C16C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCC0130-DBF0-4130-8F6D-975909D5B090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCC0130-DBF0-4130-8F6D-975909D5B090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCC0130-DBF0-4130-8F6D-975909D5B090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCC0130-DBF0-4130-8F6D-975909D5B090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

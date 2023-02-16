@@ -8,12 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Card_cs\" />
+    <None Remove="CRUD_classes\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="System.Text.Json" />
+    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Card_cs\" />
+    <Folder Include="CRUD_classes\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
