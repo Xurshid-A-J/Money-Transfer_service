@@ -8,7 +8,7 @@ namespace Projects.CRUD_JSON
 		public static string GetDirectory_L6Serialization()
 		  {
 			return   (new DirectoryInfo(Directory.GetCurrentDirectory())
-			  .Parent?.Parent?.Parent?.FullName + "/CRUD_classes"); 
+			  .Parent?.Parent?.Parent?.FullName + "/Data"); 
 		  }
 
 		public static List<Account> GetAccounts()
