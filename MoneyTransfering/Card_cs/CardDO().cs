@@ -93,7 +93,7 @@ namespace Card
 							}
 								while(isValid)
 								{
-									Console.Write("Enter the amount");
+									Console.Write("Enter the amount :");
 									int amount = int.Parse(Console.ReadLine());
 								if (amount > 0 & amount != null)
 								{
